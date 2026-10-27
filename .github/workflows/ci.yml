@@ -1,0 +1,24 @@
+# campus-agent CI：离线评估随 push/PR 自动运行（不消耗任何 API 额度）
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  offline-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 运行离线工具层评估（12 例）
+        run: python evaluate.py

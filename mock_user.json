@@ -1,0 +1,27 @@
+{
+  "student_id": "PB2022010001",
+  "name": "小张",
+  "campus_card": {
+    "balance": 87.53,
+    "last_expense": {"place": "桂园食堂二楼", "amount": 12.5, "time": "2026-10-26 11:42"}
+  },
+  "week_schedule": {
+    "星期一": [{"time": "08:00-09:40", "course": "数据结构", "room": "博学楼B302"}, {"time": "14:00-15:40", "course": "机器学习", "room": "理工楼D201"}],
+    "星期二": [{"time": "10:00-11:40", "course": "操作系统", "room": "博学楼A108"}],
+    "星期三": [{"time": "08:00-09:40", "course": "计算机网络", "room": "博学楼B305"}, {"time": "16:00-17:40", "course": "数据库原理", "room": "理工楼C210"}],
+    "星期四": [],
+    "星期五": [{"time": "14:00-15:40", "course": "Python程序设计", "room": "博学楼A203"}],
+    "星期六": [],
+    "星期日": []
+  },
+  "grades": {
+    "gpa": 3.42,
+    "ranking": "18/126",
+    "courses": [
+      {"course": "数据结构", "score": 91, "credit": 4.0},
+      {"course": "机器学习", "score": 88, "credit": 3.5},
+      {"course": "操作系统", "score": 85, "credit": 3.5},
+      {"course": "Python程序设计", "score": 95, "credit": 3.0}
+    ]
+  }
+}
